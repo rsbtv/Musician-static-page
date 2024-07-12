@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Johnny Cash Official Site</title>
+    <link rel="icon" href="title_icon.jpg">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>JOHNNY CASH</span>
+            </div>
+                <div class="newsletter">
+                    <button>
+                        <i class="fa fa-star"></i>
+                        <span class="to-right">JOIN THE NEWSLETTER</span>
+                    </button>
+                </div>
+                <div class="search">
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                    <div class="toggle-nav">
+                        <button id="toggleButton" class="toggle-button">
+                          <span class="line"></span>
+                          <span class="line"></span>
+                          <span class="line"></span>
+                        </button>
+                    </div>
+                      
+                    <div class="menu-container">
+                    <div class="menu">
+                        <button>NEWS</button>
+                        <button>MUSIC</button>
+                        <button>MOVIES & TV</button>
+                        <button>VIDEOS</button>
+                        <button>PHOTOS</button>
+                        <button id="aboutButton" class="about" onclick="toggleDropdownMenu()">ABOUT <span class="arrow">&#9662;</span></button>
+                        <div id="dropdownMenu" class="dropdown-menu">
+                            <button class="dropdown-button">LIVE EVENTS</button>
+                            <button class="dropdown-button">BIOGRAPHY</button>
+                            <button class="dropdown-button">BOOKS</button>
+                            <button class="dropdown-button">AWARDS</button>
+                            <button class="dropdown-button">TOUR HISTORY</button>
+                            <button class="dropdown-button">TIMELINE</button>
+                        </div>
+                        <button>STORE</button>
+                    </div>
+        </div>
+        <div class="toggle-contacts">
+            <button id="toggle-contacts" onclick="toggleContacts()"><i class="fas fa-link"></i></button>
+            <div class="additional_buttons" id="additional_buttons">
+                <button><i class="fab fa-facebook"></i></button>
+                <button><i class="fab fa-twitter"></i></button>
+                <button><i class="far fa-envelope"></i></button>
+                <button><i class="fas fa-code"></i></button>
+            </div>
+        </div>
+        
+        </div>
+        
+      </header>
+      <div class="menu-overlay"></div>
+      <div class="big-photo">
+        <img id="bigPhoto" src="big_photo.jpeg" alt="">
+        
+        <div class="text_1">EXPANDED ALBUM</div>
+        <div class="text_2">JOHNNY CASH FOREVER WORDS</div>
+      </div>
+      <button class="round"><span>i</span></button>
+      <div class="author"><span>PHOTO CREDIT: SANDY SPEICER</span></div>
+      <div class="fw_player">
+        <div class="forever_words"><img id="foreverWords" src="forever_words.jpg" alt=""></div>
+        <div class="players_menu">
+            <button class="amazon" onclick="moveToAmazon()">AMAZON</button>
+            <span class="vertical_line"></span>                
+            <button class="apple" onclick="moveToApple()">APPLE</button>
+            <span class="vertical_line"></span>            
+            <button class="spotify" onclick="moveToSpotify()">SPOTIFY</button>
+            <span class="vertical_line"></span>           
+            <button class="tidal" onclick="moveToTidal()">TIDAL</button>
+        </div>
+        <div class="player_horizontal_line"></div>
+        <div class="player_nav"></div>
+        <img class="amazon-screen" src="amazon.png" alt="">
+        <img src="apple.png" alt="" class="apple-screen">
+        <img src="spotify.png" alt="" class="spotify-screen">
+        <img src="tidal.png" alt="" class="tidal-screen">
+        <div class="forever_words_text">JOHNNY CASH FOREVER WORDS (EXPANDED EDITION)</div>
+        <div class="forever_words_horizontal_line"></div>
+      </div>
+      <div class="first_quote">
+        <i class="first_quote_brackets">“</i>
+        <div class="first_quote_first_string">All your life, you will be faced with a choice.</div>
+        <div class="first_quote_second_string">You can choose love or hate... I choose love.</div>
+        <div class="first_quote_author">JOHNNY CASH</div>
+        <div class="first_quote_horizontal_line"></div>
+      </div>
+      <div class="news">
+        <div class="first_news">
+            <img src="first_news_picture.jpg" alt="" class="first_news_picture">
+            <div class="first_news_title">NEWS</div>
+            <div class="first_news_first_text">'Johnny Cash: The Life In Lyrics'</div>
+            <div class="first_news_second_text">Coming November 2023</div>
+        </div>
+        <div class="second_news">
+            <img src="second_news_picture.jpg" alt="" class="second_news_picture">
+            <div class="second_news_title">NEWS</div>
+            <div class="second_news_text">In Memory Of June Carter Cash</div>
+        </div>
+        <div class="third_news">
+            <img src="third_news_picture.jpg" alt="" class="third_news_picture">
+            <div class="third_news_title">NEWS</div>
+            <div class="third_news_first_text">Johnny Cash 'At Folsom Prison' Is 55</div>
+            <div class="third_news_second_text">Years Old This Year</div>
+        </div>
+        <div class="news_horizontal_line"></div>
+      </div>
+      <div class="the_deputy">
+        <img src="the_deputy_picture.png" alt="" class="the_deputy_picture">
+        <div class="the_deputy_first">THIS DAY IN HISTORY</div>
+        <div class="the_deputy_second">The Deputy</div>
+        <div class="the_deputy_third">1961 | 62 YEARS AGO</div>
+        <div class="the_deputy_horizontal_line"></div>
+      </div>
+      <div class="second_quote">
+        <i class="second_quote_brackets">“</i>
+        <div class="second_quote_first_string">Sometimes I am two people. Johnny is the nice</div>
+        <div class="second_quote_second_string">one. Cash causes all the problems. They fight.</div>
+        <div class="second_quote_author">JOHNNY CASH</div>
+        <div class="second_quote_horizontal_line"></div>
+      </div>
+      <div class="video_and_visit">
+        <div class="video">
+            <img src="video_picture.jpg" alt="" class="video_picture">
+            <div class="video_title">VIDEO</div>
+            <div class="video_text">Johnny Cash - Help Me</div>
+        </div>
+        <div class="visit_first">
+            <img src="visit_first_picture.jpg" alt="" class="visit_first_picture">
+            <div class="visit_first_title">VISIT</div>
+            <div class="visit_first_text">Play Johnny Cash</div>
+        </div>
+        <div class="visit_second">
+            <img src="visit_second_picture.png" alt="" class="visit_second_picture">
+            <div class="visit_second_title">VISIT</div>
+            <div class="visit_second_text">Johnny Cash Museum</div>
+        </div>
+        <div class="visit_third">
+            <img src="visit_third_picture.png" alt="" class="visit_third_picture">
+            <div class="visit_third_title">VISIT</div>
+            <div class="visit_third_text">Johnny Cash Merch Store</div>
+        </div>
+        <div class="visit_fourth">
+            <img src="visit_fourth_picture.png" alt="" class="visit_fourth_picture">
+            <div class="visit_fourth_title">VISIT</div>
+            <div class="visit_fourth_text">Johnny Cash`s Bar & BBQ</div>
+        </div>
+        <div class="video_and_visit_horizontal_line"></div>
+       </div>
+       <div class="third_quote">
+        <i class="third_quote_brackets">“</i>
+        <div class="third_quote_first_string">I believe that my father is still hanging around.</div>
+        <div class="third_quote_second_string">And he’s most certainly hanging around in these</div>
+        <div class="third_quote_third_string">words, forever.</div>
+        <div class="third_quote_author">JOHN CARTER CASH</div>
+        <div class="third_quote_horizontal_line"></div>
+      </div>
+      <!-- <div class="before_footer"></div> -->
+      <footer>
+        <div class="footer_container">
+            <img src="legacy.png" alt="" class="legacy">
+            <div class="copyright_and_links">
+            <div class="copyright">© 2023 LEGACY and the "L Legacy" logo are registered trademarks of Sony Music Entertainment. All Rights Reserved.</div>
+            <div class="links"> Send Us Feedback <span>|</span> Privacy Policy <span>|</span> How We Use Your Data <span>|</span> Do Not Sell My Personal Information <span>|</span> Your California Privacy Rights <span>|</span> Terms and Conditions <span>|</span> Why Music Matters </div>
+            </div> 
+            <div class="connect">
+                <div class="connect_text">CONNECT WITH JOHNNY CASH</div>
+                <div class='icons'>
+                    <div class="icon"><i class="fab fa-amazon"></i></div>
+                    <div class="icon"><i class="fas fa-music"></i></div>
+                    <div class="icon"><i class="fab fa-facebook"></i></div>
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                    <div class="icon"><i class="fab fa-spotify"></i></div>
+                    <div class="icon"><i class="fab fa-tiktok"></i></div>
+                    <div class="icon"><i class="fab fa-twitter"></i></div>
+                    <div class="icon"><i class="fab fa-youtube"></i></div>
+                </div>
+                <button class="june_cash">JuneCarterCash.com</button>
+                <button class="footer_newsletter"><i class="fa fa-star"></i><span>JOIN THE NEWSLETTER</span></button>
+            </div>   
+        </div>
+        
+      </footer>
+      <script>
+        // Обработчик события клика на кнопку toggle-nav
+        document.getElementById("toggleButton").addEventListener("click", function() {
+            var menuContainer = document.querySelector(".menu-container");
+            var header = document.querySelector("header");
+            var newsletterButton = document.querySelector(".newsletter button");
+            var searchButton = document.querySelector(".search button");
+            var toggleNavButton = document.querySelector(".toggle-nav button");
+            var bigPhoto = document.querySelector(".big-photo ");
+            var toggleContacts = document.querySelector(".toggle-contacts button")
+            var buttonsContainer = document.getElementById('additional_buttons');
+            var roundButton = document.querySelector(".round");
+            var author = document.querySelector(".author");
+            var fwBlock = document.querySelector(".fw_player");
+            var firstQuote = document.querySelector(".first_quote");
+            var newsBlock = document.querySelector('.news');
+            var theDeputy = document.querySelector('.the_deputy');
+            var secondQuote = document.querySelector('.second_quote');
+            var videoAndVisit = document.querySelector('.video_and_visit');
+            var thirdQuote = document.querySelector('.third_quote');
+            var footer = document.querySelector('footer');
+
+
+            menuContainer.classList.toggle("active"); 
+            toggleNavButton.classList.toggle("active"); 
+
+            if (menuContainer.classList.contains("active")) {
+                header.style.backgroundColor = "#4b3a25"; // Изменение цвета header при показе меню
+                newsletterButton.style.backgroundColor = "#4b3a25";
+                searchButton.style.backgroundColor = "#4b3a25";
+                newsletterButton.style.backgroundImage = "none";
+                newsletterButton.style.color = "";
+                bigPhoto.style.transform = "translateX(-230px)";
+                bigPhoto.style.opacity = '0.6';
+                toggleContacts.style.marginLeft = "-230px";
+                roundButton.style.transform = 'translateX(-230px)';
+                roundButton.style.opacity = '0.6';
+                author.style.transform = "translateX(-230px)";
+                author.style.opacity = '0.6';
+                fwBlock.style.transform = "translateX(-230px)";
+                fwBlock.style.opacity = '0.6';
+                firstQuote.style.transform = "translateX(-230px)";
+                firstQuote.style.opacity = '0.6';
+                newsBlock.style.transform = 'translateX(-230px)';
+                newsBlock.style.opacity = '0.6';
+                theDeputy.style.transform = 'translateX(-230px)';
+                theDeputy.style.opacity = '0.6';
+                secondQuote.style.transform = 'translateX(-230px)';
+                secondQuote.style.opacity = '0.6';
+                videoAndVisit.style.transform = 'translateX(-230px)';
+                videoAndVisit.style.opacity = '0.6';
+                thirdQuote.style.transform = 'translateX(-230px)';
+                thirdQuote.style.opacity = '0.6';
+                footer.style.transform = 'translateX(-230px)';
+                footer.style.opacity = '0.6';
+
+                if (menuContainer.classList.contains("active") && buttonsContainer.classList.contains("active"))
+                {
+                    buttonsContainer.style.transform = 'translateX(-230px)';
+                }
+                else {
+                    buttonsContainer.style.transform = 'translateX(0)';
+                }
+            } else {
+                header.style.backgroundColor = "black"; 
+                newsletterButton.style.backgroundColor = "black";
+                searchButton.style.backgroundColor = "black";
+                newsletterButton.style.backgroundColor = "initial";
+                newsletterButton.style.color = "";
+                bigPhoto.style.transform = "translateX(0px)";
+                bigPhoto.style.opacity = '1';
+                toggleContacts.style.marginLeft = "0";
+                roundButton.style.transform = 'translateX(0px)';
+                roundButton.style.opacity = '1';
+                author.style.transform = "translateX(0px)";
+                author.style.opacity = '1';
+                fwBlock.style.transform = "translateX(0px)";
+                fwBlock.style.opacity = '1';
+                firstQuote.style.transform = "translateX(0px)";
+                firstQuote.style.opacity = '1';
+                newsBlock.style.transform = 'translateX(0px)';
+                newsBlock.style.opacity = '1';
+                theDeputy.style.transform = 'translateX(0px)';
+                theDeputy.style.opacity = '1';
+                secondQuote.style.transform = 'translateX(0px)';
+                secondQuote.style.opacity = '1';
+                videoAndVisit.style.transform = 'translateX(0px)';
+                videoAndVisit.style.opacity = '1';
+                thirdQuote.style.transform = 'translateX(0px)';
+                thirdQuote.style.opacity = '1';
+                footer.style.transform = 'translateX(0px)';
+                footer.style.opacity = '1';
+
+                if (buttonsContainer.classList.contains("active"))
+                {
+                    buttonsContainer.style.transform = 'translateX(0)';
+                }
+                }
+        });
+
+        function toggleDropdownMenu() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("active");
+        }
+
+        function toggleContacts() {
+            var buttonsContainer = document.getElementById('additional_buttons');
+            var menuContainer = document.querySelector('.menu-container');
+            
+            buttonsContainer.classList.toggle('active');
+            if (buttonsContainer.classList.contains("active") && (menuContainer.classList.contains("active"))) {
+                buttonsContainer.style.transform = 'translateX(-230px)';
+            }
+            else {
+                buttonsContainer.style.transform = 'translateX(0)';
+            }
+        }
+
+        function moveToAmazon() {
+            var amazonButton = document.querySelector(".amazon");
+            var playerNav = document.querySelector(".player_nav");
+            var amazonScreen = document.querySelector(".amazon-screen");
+            var appleScreen = document.querySelector(".apple-screen");
+            var spotifyScreen = document.querySelector(".spotify-screen");
+            var tidalScreen = document.querySelector(".tidal-screen");
+
+            playerNav.style.transform = 'translateX(0px)';
+            amazonScreen.style.display = 'flex';
+            appleScreen.style.display = 'none';
+            spotifyScreen.style.display = 'none';
+            tidalScreen.style.display = 'none';
+        }
+
+        function moveToApple() {
+            var appleButton = document.querySelector(".apple");
+            var playerNav = document.querySelector(".player_nav");
+            var amazonScreen = document.querySelector(".amazon-screen");
+            var appleScreen = document.querySelector(".apple-screen");
+            var spotifyScreen = document.querySelector(".spotify-screen");
+            var tidalScreen = document.querySelector(".tidal-screen");
+
+            playerNav.style.transform = 'translateX(87px)';
+            amazonScreen.style.display = 'none';
+            appleScreen.style.display = 'flex';
+            spotifyScreen.style.display = 'none';
+            tidalScreen.style.display = 'none';
+        }
+
+        function moveToSpotify() {
+            var spotifyButton = document.querySelector(".spotify");
+            var playerNav = document.querySelector(".player_nav");
+            var amazonScreen = document.querySelector(".amazon-screen");
+            var appleScreen = document.querySelector(".apple-screen");
+            var spotifyScreen = document.querySelector(".spotify-screen");
+            var tidalScreen = document.querySelector(".tidal-screen");
+
+            playerNav.style.transform = 'translateX(163px)';
+            amazonScreen.style.display = 'none';
+            appleScreen.style.display = 'none';
+            spotifyScreen.style.display = 'flex';
+            tidalScreen.style.display = 'none';
+        }
+
+        function moveToTidal() {
+            var tidalButton = document.querySelector(".tidal");
+            var playerNav = document.querySelector(".player_nav");
+            var amazonScreen = document.querySelector(".amazon-screen");
+            var appleScreen = document.querySelector(".apple-screen");
+            var spotifyScreen = document.querySelector(".spotify-screen");
+            var tidalScreen = document.querySelector(".tidal-screen");
+
+            playerNav.style.transform = 'translateX(250px)';
+            amazonScreen.style.display = 'none';
+            appleScreen.style.display = 'none';
+            spotifyScreen.style.display = 'none';
+            tidalScreen.style.display = 'flex';
+        }
+        </script>
+
+    </body>
+</html>
